@@ -6,6 +6,33 @@
         "-y",
         "@upstash/context7-mcp"
       ]
+    },
+    "git": {
+      "command": "uvx",
+      "args": ["mcp-server-git"]
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+      "env": {
+        "BRAVE_API_KEY": "${input:brave_api_key}"
+      }
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "${workspaceFolder}"
+      ]
     }
-  }
+  },
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "brave_api_key",
+      "description": "Brave Search API Key",
+      "password": true
+    }
+  ]
 }
