@@ -4,8 +4,8 @@
     <img src="https://img.shields.io/badge/Datalumina-Project%20Template-2856f7" alt="Datalumina Project" />
 </a>
 
-## Cookiecutter Data Science
-This project template is a simplified version of the [Cookiecutter Data Science](https://cookiecutter-data-science.drivendata.org) template, created to suit the needs of Datalumina and made available as a GitHub template.
+## Project Template with AI Workflow Integration
+This project template combines the structure of [Cookiecutter Data Science](https://cookiecutter-data-science.drivendata.org) with best practices for collaborating with AI coding assistants. The template provides structure for both traditional data science workflows and effective AI collaboration.
 
 ## Adjusting .gitignore
 
@@ -17,6 +17,15 @@ Ensure you adjust the `.gitignore` file according to your project needs. For exa
 ```
 
 Typically, you want to exclude this folder if it contains either sensitive data that you do not want to add to version control or large files.
+
+## Using AI Workflow with this Template
+This template integrates best practices for collaborating with AI coding assistants:
+
+1. **Planning**: Use `PLANNING.md` to document your project's high-level vision, architecture, and tech stack.
+2. **Task Management**: Use `TASK.md` to track tasks, backlog items, and project milestones.
+3. **AI Collaboration**: Follow the guidelines in `AI_WORKFLOW.md` for effective collaboration with AI coding assistants.
+
+For a detailed guide on working with AI coding assistants, see [AI_WORKFLOW.md](./AI_WORKFLOW.md).
 
 ## Duplicating the .env File
 To set up your environment variables, you need to duplicate the `.env.example` file and rename it to `.env`. You can do this manually or using the following terminal command:
